@@ -7,11 +7,11 @@ buildDrafts = true
 buildFuture = true
 
 [params]
-  TwitterUser = "YourTwitterUsername"
-  FacebookUser = "YourFacebookUsername"
+  TwitterUser = "teratail"
+  FacebookUser = "teratail"
   GooglePlusUser = "YourGooglePlusUsername"
-  copyright = "&copy; a short copyright statement"
-  author = "John Doe"
+  copyright = "&copy; Leverages "
+  author = "Motohashi Yusuke"
   background = "a relative or absolute URL to a background image"
   bgcolor = "a background color; will be ignored if you use background"
   primary = "indigo"
