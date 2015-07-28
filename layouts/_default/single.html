@@ -1,7 +1,7 @@
 {{ partial "header_main.html" . }}
 <body class="product">
 {{ partial "header-menu.html" . }}
-
+じゅんびちゅう
 <div class="blog__posts mdl-grid">
   {{ $paginator := .Paginate (where .Data.Pages "Type" "product") }}
   {{ range $index, $page := $paginator.Pages }}

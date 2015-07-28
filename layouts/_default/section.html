@@ -7,12 +7,12 @@
   {{ $paginator := .Paginate (where .Data.Pages "Type" "product") }}
   {{ range $index, $page := $paginator.Pages }}
       {{if and (eq $paginator.PageNumber 1) (eq $index 0)}}
-        <div class="mdl-card mdl-cell first-post mdl-shadow--2dp">
-          {{ .Render "li" }}
+        <div class="mdl-card mdl-cell first-post">
+                {{ .Render "li" }}
         </div>
       {{else}}
-        <div class="mdl-card mdl-cell mdl-shadow--2dp">
-          {{ .Render "li" }}
+        <div class="mdl-card mdl-cell">
+        {{ .Render "li" }}
         </div>
       {{end}}
   {{ end }}

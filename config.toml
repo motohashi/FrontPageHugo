@@ -15,4 +15,4 @@ buildFuture = true
   background = "a relative or absolute URL to a background image"
   bgcolor = "a background color; will be ignored if you use background"
   primary = "indigo"
-  accent = "pink"
+  accent = "blue_grey"
