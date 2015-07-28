@@ -1,0 +1,75 @@
+      </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            {{with .Site.Params.TwitterUser}}
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__twitter" href="https://twitter.com/{{.}}" target="_blank" rel="me"></a>
+            {{end}}
+            {{with .Site.Params.FacebookUser}}
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__fb"  href="https://facebook.com/{{.}}" target="_blank" rel="me"></a>
+            {{end}}
+            {{with .Site.Params.GooglePlusUser}}
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__gplus" href="https://google.com/+{{.}}" target="_blank" rel="me"></a>
+            {{end}}
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            {{with .Site.Params.copyright}}
+              <p>{{ . | safeHTML }}</p>
+            {{end}}
+          </div>
+        </footer>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <!-- IE Compatibility shims -->
+      <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js""></script>
+      <![endif]-->
+
+      <!--[if IE]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flexie/1.0.3/flexie.min.js"></script>
+        <link href="../assets/ie.css" rel="stylesheet">
+      <![endif]-->
+    <!-- end shims -->
+
+
+    <!-- Material Design Lite -->
+    <script src="/js/material.min.js"></script>
+    <!-- Add Copy-to-CodePen buttons to code blocks -->
+    <script src="/assets/codepen.js"></script>
+    <!-- Enable Prism syntax highlighting -->
+    <script src="/assets/prism.js"></script>
+    <script src="/assets/prism-markup.min.js"></script>
+    <script src="/assets/prism-javascript.min.js"></script>
+    <script src="/assets/prism-css.min.js"></script>
+    <script src="/assets/prism-bash.min.js"></script>
+    <script src="/assets/main.js"></script>
+    <!-- Built with love using Material Design Lite -->
+    <script src="/js/highlight.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/share.min.js"></script>
+
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+    
+    $(function() {
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+  {{ partial "share.html" . }}
+</html>

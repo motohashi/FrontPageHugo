@@ -1,0 +1,18 @@
+baseurl = "http://technologyMediaLab.github.io"
+languageCode = "ja-jp"
+title = "Technology Media Lab"
+paginate = 6
+description = "A demo site for the material-lite theme"
+buildDrafts = true
+buildFuture = true
+
+[params]
+  TwitterUser = "teratail"
+  FacebookUser = "teratail"
+  GooglePlusUser = "YourGooglePlusUsername"
+  copyright = "&copy; Leverages "
+  author = "Motohashi Yusuke"
+  background = "a relative or absolute URL to a background image"
+  bgcolor = "a background color; will be ignored if you use background"
+  primary = "indigo"
+  accent = "blue_grey"

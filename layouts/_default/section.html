@@ -1,0 +1,24 @@
+{{ partial "header_main.html" . }}
+<body class="about">
+{{ partial "header-menu.html" . }}
+
+<div class="mdl-grid">
+  {{ partial "author-box.html" . }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "product") }}
+  {{ range $index, $page := $paginator.Pages }}
+      {{if and (eq $paginator.PageNumber 1) (eq $index 0)}}
+        <div class="mdl-card mdl-cell first-post">
+                {{ .Render "li" }}
+        </div>
+      {{else}}
+        <div class="mdl-card mdl-cell">
+        {{ .Render "li" }}
+        </div>
+      {{end}}
+  {{ end }}
+  {{ partial "pagination.html" $paginator }}
+</div>
+
+
+
+{{ partial "footer.html" . }}
