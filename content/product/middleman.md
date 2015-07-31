@@ -2,7 +2,7 @@
 date = "2015-07-24T15:01:47+09:00"
 draft = true
 title = "Middlemanで技術ブログ作るとみんな幸せになるよ!"
-description = "teratail meetup#1 でLTに使われた資料 (ikuwow)"
+description = "teratail meetup#1 でLTに使われた資料"
 tags = "middleman"
 categories = ["Development"]
 defaultLayout = "default"
